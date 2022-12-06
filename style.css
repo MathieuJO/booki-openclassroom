@@ -438,8 +438,6 @@ form button {
 @media screen and (max-width: 992px) {
 
   .container {
-    max-width:992px;
-    min-width: 768px;
     margin-right:0.5rem;
     margin-left:0.5rem;
   }
@@ -556,24 +554,16 @@ form button {
 /*MOBILE*/
 
 @media screen and (max-width: 768px)  {
- 
-  .container {
-    min-width: 320px;
-    max-width: 767px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  
+  /* header*/
+
   
   .tete {
     flex-direction: column;
     align-items: center;
-  }
-  
-  .entete-text{
     margin-left: auto;
     margin-right: auto;
   }
-  
   
   .search {
     width: 100%;
@@ -598,19 +588,20 @@ form button {
     height: 5rem;
     margin: 0;
   }
-  
-  /* header*/
+
+  .entete-text h1 {
+    font-size: 1.2rem;
+    font-weight:bolder;
+    padding-bottom: 0.5rem;
+  }
   
   form {
     width: 100%;
-    margin-right: auto;
-    margin-left: auto;
   }
   
-  
   .loc1 {
-  width: 20%;
-  margin:0;
+    width: 20%;
+    margin:0;
   }
   
   form input {
@@ -621,55 +612,39 @@ form button {
     width: 20%;
   }
   
-  
-  
-    .button1
-    {
-      display: none;
-    }
+  .button1 {
+    display: none;
+  }
     
-    .fa-magnifying-glass
-    {
-      color: white;
-    }
+  .fa-magnifying-glass{
+    color: white;
+  }
   
   
   /* Nav */
   
   .entete{
     flex-direction: column;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
   }
   
   /* filtre */
   
   
   .filtre {
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
     flex-flow: wrap;
+    margin: 0;
   }
-  
   
   .eco {
     width: 45%;
     font-size: 0.8rem;
-    padding: 0.2rem;
-    margin: 0.2rem;
-  }
-  
-  .eco-i {
-    margin: 0.1rem;
+    margin-top: 0.5rem;
   }
   
   .eco-filtre {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
     flex-wrap: wrap;
   }
-  
   
   .eco:active{
     background-color:#deebff ;
@@ -686,8 +661,6 @@ form button {
   
   .filtre-info{
    display: flex;
-   margin:1rem;
-    
   }
   
   .general {
@@ -699,25 +672,25 @@ form button {
   
   .fa-info {
     margin-right: 0.5rem;
-    margin-left: O.5rem;
+    margin-left: 0.5rem;
   }
   
   /*hebergement*/
   
   
   .hebergement {
-    margin-right: auto;
-    margin-left: auto;
     flex-direction: column;
     background-color:white;
-    padding-top: 3rem;
-    height: 30rem;
+    padding-top: 1rem;
+    height: 90rem;
+    padding-top: 5rem;
   }
-  
+  .hebergement_titre {
+    margin: 0;
+  }
   
   .hebergement-card {
     width: 100%;
-    height: 10rem;
   }
   
   .hebergement_card_star {
@@ -735,23 +708,27 @@ form button {
     margin-top: 1rem;
   }
   
-  
   .general-populaire-titre{
     justify-content: space-between;
   }
+
+  .general-populaire a {
+    display: flex;
+    width: 90%;
+  }
+
   
   .general-populaire{
     flex-direction: column;
-    width: auto;
     border-radius: 0;
-    height: 60rem;
+    height: 40rem;
+    width: 100vw;
   }
   
   .general-populaire-card {
-    width: 13rem;
-    height: 13rem;
+    margin: 0;
   }
-  
+
   .card-populaire-star{
     padding: 5px;
   }
@@ -759,32 +736,30 @@ form button {
   /*activite */
   
   .general-activite-card a {
-    width: 90%;
+    display: flex;
+    width: 100%;
     margin: 1rem;
   }
   
-  
-  .activite h2 {
-    width: 100%;
-    margin: 0 0 0 2rem;
-  
-  }
   
   .general-activite-card{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 60rem;
+    padding-top: 5rem;
   }
-  
+  .activite {
+    height: 90rem;
+  }  
   
   /*footer*/
   
   .footer{
-    height: 40rem;
+    height: 60rem;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
   
-  
-
 }
